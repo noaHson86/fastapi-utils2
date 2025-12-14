@@ -1,7 +1,10 @@
 name: build
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - "**"   # optional, all branches
+    workflow_dispatch:
 
 #  push:
 #    branches:
